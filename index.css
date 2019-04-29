@@ -1,7 +1,8 @@
 body {
   background-image: url('https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg');
-  background-size: 100%;
+  background-size: 120%;
   background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 header {
@@ -46,6 +47,14 @@ header {
   display: none;
 }
 
+.hiddenMenu{
+  display: none;
+  background: rgb(36, 36, 43);
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .landingSection {
   margin-top: 180px;
   display: flex;
@@ -83,6 +92,10 @@ header {
   font-size: 14px;
 }
 
+.expand {
+  display: flex;
+}
+
 @media (max-width: 800px) {
   header {
     padding-top: 5px;
@@ -100,5 +113,49 @@ header {
   }
   .menuBtn {
     display: block;
+  }
+  .landingSection {
+    margin: 150px 0 200px 0;
+  }
+  .greeting {
+    margin-right: 23%;
+    margin-left: 23%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .landingSection {
+    margin: 80px 0 0 0;
+  }
+  .welcome {
+    font-size: 20px;
+  }
+  .greeting {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 500px) {
+  .landingSection {
+    margin: 50px 0 200px 0;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+  body {
+    background-size: 500px;
+  }
+}
+
+@media (max-width: 300px) {
+  .landingSection {
+    margin: 50px 0 200px 0;
+  }
+  .greeting {
+    font-size: 20px;
+  }
+  body {
+    background-size: auto 350px;
   }
 }
