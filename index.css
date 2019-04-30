@@ -103,6 +103,12 @@ header {
   width: 100%;
 }
 
+@media (min-width: 801px) {
+  .expand {
+    display: none;
+  }
+}
+
 @media (max-width: 800px) {
   header {
     padding-top: 5px;
@@ -128,6 +134,9 @@ header {
     margin-right: 23%;
     margin-left: 23%;
     text-align: center;
+  }
+  .expand {
+    display: absolute;
   }
 }
 
