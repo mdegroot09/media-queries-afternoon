@@ -48,11 +48,15 @@ header {
 }
 
 .hiddenMenu{
-  display: none;
   background: rgb(36, 36, 43);
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+  position: absolute;
+  top: -85px;
+  transition: all 1s;
+  z-index: -2;
+  width: 100%;
 }
 
 .landingSection {
@@ -93,7 +97,10 @@ header {
 }
 
 .expand {
-  display: flex;
+  position: absolute;
+  top: 40px;
+  z-index: -2;
+  width: 100%;
 }
 
 @media (max-width: 800px) {
